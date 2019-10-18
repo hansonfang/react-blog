@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { DATABASE } = require('../config')
+const { DATABASE } = require('../../../config/react-blog/server/config')
 const Sequelize = require('sequelize')
 
 const Op = Sequelize.Op
