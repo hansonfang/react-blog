@@ -6,7 +6,7 @@ export default {
   name: 'home',
   component: Layout,
   childRoutes: [
-    { path: '', component: lazy(() => import('@/views/admin/home')) },
+    { path: '', component: lazy(() => import('@/views/admin/article/edit')) },
     { path: 'article/edit/:id', component: lazy(() => import('@/views/admin/article/edit')) },
     { path: 'article/add', component: lazy(() => import('@/views/admin/article/edit')) },
     { path: 'article/manager', component: lazy(() => import('@/views/admin/article/manager')) },
