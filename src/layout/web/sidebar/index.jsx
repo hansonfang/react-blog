@@ -39,7 +39,7 @@ function SideBar(props) {
 
   return (
     <div className='app-sidebar'>
-      <img src={SIDEBAR.avatar} className='sider-avatar' alt='' />
+      <img src={SIDEBAR.avatar} className='sider-avatar' alt=''/>
       <h2 className='title'>{SIDEBAR.title}</h2>
       <h5 className='sub-title'>{SIDEBAR.subTitle}</h5>
       <ul className='home-pages'>

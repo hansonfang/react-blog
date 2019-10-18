@@ -5,17 +5,18 @@ import MyInfo from '@/views/web/about/MyInfo'
 export const API_BASE_URL = 'http://127.0.0.1:6060'
 
 // project config
-export const HEADER_BLOG_NAME = '郭大大的博客' // header title 显示的名字
+export const HEADER_BLOG_NAME = '房晓松的博客' // header title 显示的名字
 
 // === sidebar
 export const SIDEBAR = {
-  avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
-  title: '郭大大', // 标题
-  subTitle: '前端打杂人员，略微代码洁癖', // 子标题
+  avatar: require('@/assets/images/shameless.jpg'), // 侧边栏头像
+  // avatar: require('@/assets/images/avatar.jpeg'), // 侧边栏头像
+  title: 'Hansonfang', // 标题
+  subTitle: '前端坑深，劝君慎入', // 子标题
   // 个人主页
   homepages: {
-    github: 'https://github.com/gershonv',
-    juejin: 'https://juejin.im/user/5acac6c4f265da2378408f92'
+    github: 'https://github.com/hansonfang',
+    juejin: 'https://juejin.im/user/598d61fd6fb9a03c3c14cde8'
   }
 }
 
