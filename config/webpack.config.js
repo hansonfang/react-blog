@@ -26,6 +26,9 @@ const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpack
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter')
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
+const oss = require("../../config/react-blog/client/oss.config");
+const AliOSSPlugin = require('webpack-alioss-plugin')
+
 const postcssNormalize = require('postcss-normalize')
 
 const appPackageJson = require(paths.appPackageJson)
@@ -56,7 +59,8 @@ module.exports = function(webpackEnv) {
   // Webpack uses `publicPath` to determine where the app is being served from.
   // It requires a trailing slash, or the file assets will get an incorrect path.
   // In development, we always serve from the root. This makes config easier.
-  const publicPath = isEnvProduction ? paths.servedPath : isEnvDevelopment && '/'
+  // const publicPath = isEnvProduction ? paths.servedPath : isEnvDevelopment && '/'
+  const publicPath = isEnvProduction ? oss.publicPath : isEnvDevelopment && '/'
   // Some apps do not use client-side routing with pushState.
   // For these, "homepage" can be set to "." to enable relative asset paths.
   const shouldUseRelativeAssetPaths = publicPath === './'
@@ -622,6 +626,17 @@ module.exports = function(webpackEnv) {
           formatter: isEnvProduction ? typescriptFormatter : undefined
         }),
       // isEnvProduction && new BundleAnalyzerPlugin()
+
+      new AliOSSPlugin({
+        auth: {
+          accessKeyId: oss.accessKeyId, // 在阿里 OSS 控制台获取
+          accessKeySecret: oss.accessKeySecret, // 在阿里 OSS 控制台获取
+          region: oss.region, // OSS 服务节点, 示例: oss-cn-hangzhou
+          bucket: oss.bucket, // OSS 存储空间, 在阿里 OSS 控制台获取
+        },
+        ossBaseDir: oss.ossBaseDir,
+        project: 'react-blog', // 项目名(用于存放文件的直接目录)
+      })
     ].filter(Boolean),
     // Some libraries import Node modules but don't use them in the browser.
     // Tell Webpack to provide empty mocks for them so importing them works.
