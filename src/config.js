@@ -2,7 +2,7 @@ import React from 'react'
 import MyInfo from '@/views/web/about/MyInfo'
 
 // API_BASE_URL
-export const API_BASE_URL = process.env.NODE_ENV !== 'production' ? 'http://47.95.123.147:6060' : 'http://127.0.0.1:6060'
+export const API_BASE_URL = process.env.NODE_ENV === 'production' ? 'http://47.95.123.147:6060' : 'http://127.0.0.1:6060'
 
 // project config
 export const HEADER_BLOG_NAME = '房晓松的博客' // header title 显示的名字
