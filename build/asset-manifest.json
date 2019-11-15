@@ -1,21 +1,20 @@
 {
   "files": {
-    "antd-vendor.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/css/antd-vendor.86353faa.chunk.css",
-    "antd-vendor.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/antd-vendor.704db921.chunk.js",
-    "static/css/1.853658d2.chunk.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/css/1.853658d2.chunk.css",
-    "static/js/1.f82e5a79.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/1.f82e5a79.chunk.js",
-    "static/css/2.b24eb00d.chunk.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/css/2.b24eb00d.chunk.css",
-    "static/js/2.0c881e1d.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/2.0c881e1d.chunk.js",
-    "static/js/3.76add567.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/3.76add567.chunk.js",
-    "main.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/css/main.6d6fcb27.chunk.css",
-    "main.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/main.c6f8eede.chunk.js",
-    "react-vendor.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/react-vendor.8bb575c8.chunk.js",
-    "runtime~main.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/runtime~main.d0070632.js",
-    "static/js/7.8f818050.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/7.8f818050.chunk.js",
-    "static/js/8.04c5ee4e.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/8.04c5ee4e.chunk.js",
-    "static/js/9.3ff7e0db.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/9.3ff7e0db.chunk.js",
-    "static/js/10.0a1e0dc5.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/10.0a1e0dc5.chunk.js",
-    "index.html": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogindex.html",
-    "static/media/shameless.jpg": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/media/shameless.b00f5fb3.jpg"
+    "antd-vendor.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/css/antd-vendor.86353faa.chunk.css",
+    "antd-vendor.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/antd-vendor.1f188d0a.chunk.js",
+    "static/css/1.853658d2.chunk.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/css/1.853658d2.chunk.css",
+    "static/js/1.f82e5a79.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/1.f82e5a79.chunk.js",
+    "static/css/2.b24eb00d.chunk.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/css/2.b24eb00d.chunk.css",
+    "static/js/2.0c881e1d.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/2.0c881e1d.chunk.js",
+    "static/js/3.76add567.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/3.76add567.chunk.js",
+    "main.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/css/main.6d6fcb27.chunk.css",
+    "main.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/main.44afa2f1.chunk.js",
+    "react-vendor.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/react-vendor.8bb575c8.chunk.js",
+    "runtime~main.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/runtime~main.52471b8b.js",
+    "static/js/7.8f818050.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/7.8f818050.chunk.js",
+    "static/js/8.04c5ee4e.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/8.04c5ee4e.chunk.js",
+    "static/js/9.3ff7e0db.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/9.3ff7e0db.chunk.js",
+    "static/js/10.0a1e0dc5.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/static/js/10.0a1e0dc5.chunk.js",
+    "index.html": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blog/index.html"
   }
 }

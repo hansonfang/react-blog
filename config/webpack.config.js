@@ -634,7 +634,6 @@ module.exports = function(webpackEnv) {
           region: oss.region, // OSS 服务节点, 示例: oss-cn-hangzhou
           bucket: oss.bucket, // OSS 存储空间, 在阿里 OSS 控制台获取
         },
-        exclude: /.*\.(jpg|json|ico|html)$/,
         ossBaseDir: oss.ossBaseDir,
         project: 'react-blog', // 项目名(用于存放文件的直接目录)
       })
