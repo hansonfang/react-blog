@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react'
-import { connect } from 'react-redux'
+import { connect, useSelector, useDispatch } from 'react-redux'
 import { Table, Divider, Tag, Modal, message, Badge, Button, Popconfirm, Icon } from 'antd'
 
 import axios from '@/utils/axios'
@@ -11,34 +11,39 @@ import AppPagination from '@/components/Pagination'
 import download from '@/utils/download'
 
 function ArticleManager(props) {
-  const { tagList, categoryList } = props
+  const { tagList, categoryList } = useSelector(state => ({
+    tagList: state.article.tagList,
+    categoryList: state.article.categoryList
+  }))
+
   const [loading, setLoading] = useState(false)
   const [list, setList] = useState([])
   const [pagination, setPagination] = useState({
     current: 1,
-    pageSize: 1,
+    pageSize: 10,
     total: 0
   })
   const [query, setQuery] = useState({})
 
   useEffect(() => {
-    //
-    fetchList({ current: 1 })
-  }, [])
+    fetchList()
+  }, [query])
 
-  function fetchList({ current = 1, pageSize = 10, ...query }) {
+  function fetchList() {
     setLoading(true)
+    const params = { ...query, ...pagination }
+    if (params.current) {
+      params.page = params.current
+      delete params.current
+    }
     axios
-      .get('/article/list', {
-        params: { page: current, pageSize, ...query }
-      })
+      .get('/article/list', { params })
       .then(res => {
         setList(res.rows)
-        setPagination({
-          current,
-          pageSize,
-          total: res.count
-        })
+        setPagination({ ...pagination, total: res.count })
+        setLoading(false)
+      })
+      .catch(() => {
         setLoading(false)
       })
   }
@@ -50,19 +55,18 @@ function ArticleManager(props) {
 
   function onDelete(articleId) {
     axios.delete(`/article/${articleId}`).then(res => {
-      fetchList(pagination)
+      fetchList()
     })
   }
 
   function onQuery(values) {
-    setQuery(query)
-    fetchList({ ...values, current: 1 })
+    setQuery(values)
   }
 
   function handlePageChange(page) {
     pagination.current = page
     setPagination(pagination)
-    fetchList({ ...pagination, ...query })
+    fetchList()
   }
 
   function output(articleId) {
@@ -155,7 +159,4 @@ function ArticleManager(props) {
   )
 }
 
-export default connect(state => ({
-  tagList: state.article.tagList,
-  categoryList: state.article.categoryList
-}))(ArticleManager)
+export default ArticleManager

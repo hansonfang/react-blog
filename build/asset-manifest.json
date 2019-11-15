@@ -1,5 +1,7 @@
 {
   "files": {
+    "antd-vendor.css": "/static/css/antd-vendor.b52568c8.chunk.css",
+    "antd-vendor.js": "/static/js/antd-vendor.e2999c29.chunk.js",
     "antd-vendor.css": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/css/antd-vendor.a2e84a03.chunk.css",
     "antd-vendor.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/antd-vendor.5e2d14d6.chunk.js",
     "static/js/1.d34b539f.chunk.js": "https://hansonoss.oss-cn-beijing.aliyuncs.com/webassets/react-blogstatic/js/1.d34b539f.chunk.js",
